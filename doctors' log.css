@@ -1,0 +1,154 @@
+/* General Styles */
+* {
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: rgb(173, 150, 117);
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 0;
+}
+
+.logo a {
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #c9c9c9;
+}
+
+/* Slider Styles */
+.slider {
+	background-image: url("https://s.yimg.com/ny/api/res/1.2/bYdzKHxqH9lC1q94JHBmmQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY1MDtjZj13ZWJw/https://media.zenfs.com/en/tvline.com/4669b6736db3cc8779f741bb6c1c9cf9");
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider h1 {
+	font-size: 48px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.slider p {
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+}
+
+/* Sector Styles */
+.sector {
+	font-size: 20px;
+	text-align: center;
+	color: black;
+	margin-bottom: 10px;
+}
+
+/* form styles */
+form {
+	font-size: 20px;
+	align-content: center;
+	padding: 10px;
+	padding-left: 50px;
+	margin-left: 30pxs;
+}
+#more {
+	font-size: small;
+	text-align: center;
+	text-shadow: 5px;
+}
+
+/* footer animation styles */
+.footer-animation {
+	background-image: url('doc1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: auto;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-block: 40px;
+}
+@keyframes footer-animation {
+	0% {
+		background-image: url('doc1.jpg');
+	}
+	10% {
+		background-image: url('doc2.jpeg');
+	}
+	20% {
+		background-image: url('doc3.jpeg');
+	}
+	30% {
+		background-image: url('doc4.jpeg');
+	}
+	40% {
+		background-image: url('doc5.jpeg');
+	}
+	50% {
+		background-image: url('doc6.jpeg');
+	}
+	60% {
+		background-image: url('doc7.jpeg');
+	}
+	70% {
+		background-image: url('doc8.jpeg');
+	}
+	80% {
+		background-image: url('doc9.jpeg');
+	}
+	90% {
+		background-image: url('doc10.jpeg');
+		animation-timing-function: steps(1, end);
+	}
+	100% {
+		background-image: url('doc1.jpeg');
+	}
+}
+.footer-animation {
+	animation-name: footer-animation;
+	animation-duration: 60s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
